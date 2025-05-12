@@ -1,61 +1,61 @@
-import React from "react";
-import { Card, CardContent } from "../../../../components/ui/card";
+import React from 'react';
+import { Card, CardContent } from '../../../../components/ui/card';
 
 export const DivByAnima = (): JSX.Element => {
   // Data for progress cards
   const progressCards = [
     {
       id: 1,
-      title: "Prepare",
+      title: 'Prepare',
       percentage: 85,
-      color: "bg-emerald-500",
-      textColor: "text-emerald-500",
-      icon: "/frame-6.svg",
+      color: 'bg-emerald-500',
+      textColor: 'text-emerald-500',
+      icon: '/frame-6.svg',
     },
     {
       id: 2,
-      title: "Remember",
+      title: 'Remember',
       percentage: 75,
-      color: "bg-amber-500",
-      textColor: "text-amber-500",
-      icon: "/frame-13.svg",
+      color: 'bg-amber-500',
+      textColor: 'text-amber-500',
+      icon: '/frame-13.svg',
     },
     {
       id: 3,
-      title: "Understand",
+      title: 'Understand',
       percentage: 90,
-      color: "bg-emerald-500",
-      textColor: "text-emerald-500",
-      icon: "/frame-10.svg",
+      color: 'bg-emerald-500',
+      textColor: 'text-emerald-500',
+      icon: '/frame-10.svg',
     },
     {
       id: 4,
-      title: "Apply",
+      title: 'Apply',
       percentage: 60,
-      color: "bg-red-500",
-      textColor: "text-red-500",
-      icon: "/frame-12.svg",
+      color: 'bg-red-500',
+      textColor: 'text-red-500',
+      icon: '/frame-12.svg',
     },
     {
       id: 5,
-      title: "Create",
+      title: 'Create',
       percentage: 70,
-      color: "bg-amber-500",
-      textColor: "text-amber-500",
-      icon: "/frame-11.svg",
+      color: 'bg-amber-500',
+      textColor: 'text-amber-500',
+      icon: '/frame-11.svg',
     },
     {
       id: 6,
-      title: "Evaluate",
+      title: 'Evaluate',
       percentage: 95,
-      color: "bg-emerald-500",
-      textColor: "text-emerald-500",
-      icon: "/frame-9.svg",
+      color: 'bg-emerald-500',
+      textColor: 'text-emerald-500',
+      icon: '/frame-9.svg',
     },
   ];
 
   return (
-    <section className="w-full py-6">
+    <section className="w-full p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {progressCards.map((card) => (
           <Card

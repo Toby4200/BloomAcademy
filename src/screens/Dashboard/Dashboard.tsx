@@ -44,12 +44,12 @@ export const Dashboard = (): JSX.Element => {
           <HeaderByAnima />
           <DivByAnima />
           <SectionByAnima />
-          <img src="/images/dashboard-image.jpg" alt="Dashboard" />
+          {/* <img src="/images/dashboard-image.jpg" alt="Dashboard" />
           <img
             src="/Emily.png"
             alt="Emily"
             className="w-[200px] h-[200px] object-cover"
-          />
+          /> */}
         </main>
       </div>
     </div>

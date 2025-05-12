@@ -1,43 +1,44 @@
-import React from "react";
-import { Badge } from "../../../../components/ui/badge";
+import React from 'react';
+import { Badge } from '../../../../components/ui/badge';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "../../../../components/ui/card";
+} from '../../../../components/ui/card';
+import { div } from 'framer-motion/client';
 
 export const SectionByAnima = (): JSX.Element => {
   // Learning activities data
   const learningActivities = [
     {
       id: 1,
-      title: "Advanced Mathematics Video Lesson",
-      description: "Completed Chapter 7: Algebraic Expressions",
-      course: "Math: Beginner Essentials",
-      time: "Today",
-      icon: "/frame-8.svg",
+      title: 'Advanced Mathematics Video Lesson',
+      description: 'Completed Chapter 7: Algebraic Expressions',
+      course: 'Math: Beginner Essentials',
+      time: 'Today',
+      icon: '/frame-8.svg',
     },
     {
       id: 2,
       title: "Read a Visual Summary of Today's Topic",
       description: "Newton's Laws of Motion",
-      course: "Math: Beginner Essentials",
-      time: "Yesterday",
-      icon: "/frame-15.svg",
+      course: 'Math: Beginner Essentials',
+      time: 'Yesterday',
+      icon: '/frame-15.svg',
     },
     {
       id: 3,
-      title: "Biology Project",
-      description: "Cell Structure Research Paper",
-      course: "Math: Beginner Essentials",
-      time: "2 days ago",
-      icon: "/frame-14.svg",
+      title: 'Biology Project',
+      description: 'Cell Structure Research Paper',
+      course: 'Math: Beginner Essentials',
+      time: '2 days ago',
+      icon: '/frame-14.svg',
     },
   ];
 
   return (
-    <Card className="w-full shadow-[0px_10px_15px_#0000001a,0px_4px_6px_#0000001a] border-none">
+    <Card className="w-full shadow-[0px_10px_15px_#0000001a,0px_4px_6px_#0000001a] border-none p-6">
       <CardHeader className="px-6 pt-6 pb-0">
         <CardTitle className="font-bold text-xl text-gray-800 font-['Poppins',Helvetica]">
           Recent Learning Activities

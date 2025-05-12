@@ -36,7 +36,7 @@ export const HeaderByAnima = (): JSX.Element => {
   ];
 
   return (
-    <header className="w-full p-6 mt-[85px] mb-6">
+    <header className="w-full p-6 mt-[50px] mb-6">
       <Card className="w-full shadow-[0px_10px_15px_#0000001a,0px_4px_6px_#0000001a] border-none">
         <CardContent className="p-6">
           {/* Profile Section */}
@@ -44,25 +44,33 @@ export const HeaderByAnima = (): JSX.Element => {
             {/* Profile Info */}
             <div className="flex-1">
               <div className="flex justify-between items-start">
-                <div>
-                  <h2 className="font-bold text-2xl text-gray-800 font-['Poppins',Helvetica] leading-6 mb-2">
-                    {studentProfile.name}
-                  </h2>
-                  <p className="font-normal text-base text-gray-600 font-['Poppins',Helvetica] leading-4 mb-4">
-                    {studentProfile.grade}
-                  </p>
-                  <Badge className="bg-[#375b281a] text-[#375b28] hover:bg-[#375b281a] px-4 py-1 rounded-full">
-                    <div className="flex items-center gap-2">
-                      <img
-                        className="w-[15.75px] h-3.5"
-                        alt="Learning style icon"
-                        src="/frame-5.svg"
-                      />
-                      <span className="font-normal text-sm font-['Poppins',Helvetica]">
-                        {studentProfile.learningStyle}
-                      </span>
-                    </div>
-                  </Badge>
+                <div className="flex items-center gap-4">
+                  <div
+                    className="w-24 h-24 border-4 border-solid border-[#375b28] rounded-full bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url(${studentProfile.profileImage})`,
+                    }}
+                  />
+                  <div>
+                    <h2 className="font-bold text-2xl text-gray-800 font-['Poppins',Helvetica] leading-6 mb-2">
+                      {studentProfile.name}
+                    </h2>
+                    <p className="font-normal text-base text-gray-600 font-['Poppins',Helvetica] leading-4 mb-4">
+                      {studentProfile.grade}
+                    </p>
+                    <Badge className="bg-[#375b281a] text-[#375b28] hover:bg-[#375b281a] px-4 py-1 rounded-full">
+                      <div className="flex items-center gap-2">
+                        <img
+                          className="w-[15.75px] h-3.5"
+                          alt="Learning style icon"
+                          src="/frame-5.svg"
+                        />
+                        <span className="font-normal text-sm font-['Poppins',Helvetica]">
+                          {studentProfile.learningStyle}
+                        </span>
+                      </div>
+                    </Badge>
+                  </div>
                 </div>
 
                 {/* Right side actions */}
@@ -82,11 +90,6 @@ export const HeaderByAnima = (): JSX.Element => {
                       {studentProfile.focus}
                     </span>
                   </div>
-
-                  <div
-                    className="w-24 h-24 border-4 border-solid border-[#375b28] rounded-full bg-cover bg-center"
-                    style={{ backgroundImage: `url(${studentProfile.profileImage})` }}
-                  />
                 </div>
               </div>
             </div>

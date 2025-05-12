@@ -1,7 +1,7 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Button } from "../../components/ui/button";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '../../components/ui/button';
+import { Link } from 'react-router-dom';
 
 export const Landing = (): JSX.Element => {
   const scrollToFeatures = () => {
@@ -21,7 +21,7 @@ export const Landing = (): JSX.Element => {
           <div className="absolute inset-0 backdrop-blur-sm bg-white/30" />
         </div>
 
-        <nav className="relative z-10 bg-white/80 backdrop-blur-sm">
+        <nav className="relative z-10 bg-white/80 backdrop-blur-sm shadow-md">
           <div className="container mx-auto px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img
@@ -37,9 +37,13 @@ export const Landing = (): JSX.Element => {
             </div>
             <div className="flex items-center gap-4">
               <Link to="/dashboard">
-                <Button variant="outline" className="mr-4">Go to Dashboard</Button>
+                <Button variant="outline" className="mr-4">
+                  Go to Dashboard
+                </Button>
               </Link>
-              <Button className="bg-[#375b28] hover:bg-[#375b28]/90">Get Started</Button>
+              <Button className="bg-[#375b28] hover:bg-[#375b28]/90">
+                Get Started
+              </Button>
             </div>
           </div>
         </nav>
@@ -51,22 +55,23 @@ export const Landing = (): JSX.Element => {
             transition={{ duration: 0.8 }}
             className="text-center w-full"
           >
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl font-bold text-white-900 text-white mb-6">
               Personalized Learning Journey
               <br />
-              <span className="text-[#375b28]">Just for You</span>
+              <span className="text-[#0FFF8A]">Just for You</span>
             </h1>
-            <p className="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
-              Upload your materials, discover your learning style, and get a customized learning plan based on Bloom's Taxonomy.
+            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+              Upload your materials, discover your learning style, and get a
+              customized learning plan based on Bloom's Taxonomy.
             </p>
-            <Button 
+            <Button
               onClick={scrollToFeatures}
               className="bg-[#375b28] hover:bg-[#375b28]/90 text-white px-8 py-6 text-lg"
             >
               Learn More
             </Button>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -75,8 +80,18 @@ export const Landing = (): JSX.Element => {
             onClick={scrollToFeatures}
           >
             <div className="animate-bounce">
-              <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              <svg
+                className="w-6 h-6 text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
               </svg>
             </div>
           </motion.div>
@@ -86,7 +101,9 @@ export const Landing = (): JSX.Element => {
       {/* Features Section */}
       <section id="features" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">How It Works</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
+            How It Works
+          </h2>
           <div className="grid md:grid-cols-3 gap-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -97,10 +114,17 @@ export const Landing = (): JSX.Element => {
               className="bg-gray-50 p-8 rounded-lg text-center"
             >
               <div className="w-16 h-16 bg-[#375b28]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <img className="w-8 h-8" alt="Assessment icon" src="/frame-6.svg" />
+                <img
+                  className="w-8 h-8"
+                  alt="Assessment icon"
+                  src="/frame-6.svg"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-4">Smart Assessment</h3>
-              <p className="text-gray-600">Understand your learning style and current knowledge level through our adaptive assessment.</p>
+              <p className="text-gray-600">
+                Understand your learning style and current knowledge level
+                through our adaptive assessment.
+              </p>
             </motion.div>
 
             <motion.div
@@ -112,10 +136,17 @@ export const Landing = (): JSX.Element => {
               className="bg-gray-50 p-8 rounded-lg text-center"
             >
               <div className="w-16 h-16 bg-[#375b28]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <img className="w-8 h-8" alt="Customize icon" src="/frame-13.svg" />
+                <img
+                  className="w-8 h-8"
+                  alt="Customize icon"
+                  src="/frame-13.svg"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-4">Custom Roadmap</h3>
-              <p className="text-gray-600">Get a personalized learning plan that adapts to your pace and preferences.</p>
+              <p className="text-gray-600">
+                Get a personalized learning plan that adapts to your pace and
+                preferences.
+              </p>
             </motion.div>
 
             <motion.div
@@ -127,10 +158,17 @@ export const Landing = (): JSX.Element => {
               className="bg-gray-50 p-8 rounded-lg text-center"
             >
               <div className="w-16 h-16 bg-[#375b28]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <img className="w-8 h-8" alt="Progress icon" src="/frame-10.svg" />
+                <img
+                  className="w-8 h-8"
+                  alt="Progress icon"
+                  src="/frame-10.svg"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-4">Track Progress</h3>
-              <p className="text-gray-600">Monitor your advancement through interactive dashboards and detailed analytics.</p>
+              <p className="text-gray-600">
+                Monitor your advancement through interactive dashboards and
+                detailed analytics.
+              </p>
             </motion.div>
           </div>
         </div>
@@ -139,7 +177,9 @@ export const Landing = (): JSX.Element => {
       {/* CTA Section */}
       <section className="py-20 bg-[#375b28]">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">Ready to Transform Your Learning Experience?</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">
+            Ready to Transform Your Learning Experience?
+          </h2>
           <Link to="/dashboard">
             <Button className="bg-white text-[#375b28] hover:bg-gray-100 px-8 py-6 text-lg">
               Get Started Now
